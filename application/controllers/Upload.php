@@ -27,8 +27,8 @@ class Upload extends CI_Controller{
 		}else{
 			
 			//get the form values
-			$data['pic_title'] = $this->input->post('pic_title');
-			$data['pic_desc'] = $this->input->post('pic_desc');
+			$data['pic_title'] = $this->input->post('pic_title', TRUE);
+			$data['pic_desc'] = $this->input->post('pic_desc', TRUE);
 
 			//file upload code 
 			//set file upload settings 
